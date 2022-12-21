@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'ca.ubc.ece.cpen221'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation     'io.github.redouane59.twitter:twittered:2.21'
+    implementation     'com.fasterxml.jackson:jackson-bom:2.14.0'
+    implementation     'com.google.code.gson:gson:2.10'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly    'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
